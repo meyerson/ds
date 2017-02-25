@@ -46,9 +46,6 @@ RUN mkdir -p /var/log/luigid
 COPY start.sh /opt/app/start.sh
 COPY conf/* /opt/app/conf/
 
-
-# COPY ./src/ /opt/app/src
-# RUN /bin/bash -c 'source /opt/app/src/bashrc'
 ENV USER_PORT=8902
 ENV LUIGI_PORT=8082
 ENV PYTHONPATH=/opt/app/src
@@ -58,5 +55,3 @@ EXPOSE 8902 8082
 WORKDIR /opt/app
 
 ENTRYPOINT ["/opt/app/start.sh"]
-
-# CMD /usr/local/bin/jupyter-notebook --no-browser --port=$USER_PORT --ip=0.0.0.0
