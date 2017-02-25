@@ -1,0 +1,10 @@
+version: '2'
+services:
+  supervisor:
+    image: dmeyerson/default:latest
+    ports:
+     - "8902:8902"
+     - "8084:8082"
+    volumes:
+     - $PWD:/opt/app
+
