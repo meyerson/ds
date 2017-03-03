@@ -45,6 +45,7 @@ RUN pip install --no-binary :all -r /opt/app/src/requirements.txt
 RUN mkdir -p /var/log/luigid
 COPY start.sh /opt/app/start.sh
 COPY conf/* /opt/app/conf/
+COPY start.sh /opt/app/start.sh
 
 ENV USER_PORT=8902
 ENV LUIGI_PORT=8082
