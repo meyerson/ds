@@ -92,3 +92,4 @@ virtualenv==15.0.2
 widgetsnbextension==1.2.3
 yajl==0.3.5
 wget==3.2
+prince==0.2.6
